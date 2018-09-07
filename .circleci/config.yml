@@ -1,0 +1,9 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: karthequian/gruyere:latest
+      - image: gauntlt/gauntlt 
+      - run: |
+           docker run --rm -d -p 8008:8008 karthequian/gruyere:latest
+           docker ps -e
