@@ -25,4 +25,4 @@ jobs:
             mv /tmp/docker/* /usr/bin
       - run: |
            docker run --rm -d -p 8008:8008 karthequian/gruyere:latest
-           docker ps -e
+           docker ps
